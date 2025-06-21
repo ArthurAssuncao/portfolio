@@ -63,3 +63,47 @@ aside::-webkit-scrollbar-thumb {
   background-color: #9CA3AF;
   border-radius: 3px;
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper .swiper-slide {
+  height: auto;
+}
+
+
+.swiper-wrapper {
+  height: 420px !important;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .swiper-wrapper {
+    height: auto !important;
+    margin-bottom: 32px;
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+}
+
+.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50%;
+}

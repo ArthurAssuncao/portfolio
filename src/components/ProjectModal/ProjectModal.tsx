@@ -36,7 +36,7 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             navigation
             pagination={{ clickable: true }}
             spaceBetween={20}
-            className="mb-8 rounded-lg overflow-hidden"
+            className="mb-1 rounded-lg overflow-hidden"
           >
             {project.media.map((media, index) => (
               <SwiperSlide key={index}>
@@ -70,10 +70,10 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-500 transition min-w-48"
+                    className="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-500 transition min-w-32 md:min-w-48"
                   >
                     <GitHubIcon className="mr-2" size={24} />
-                    Ver Código
+                    <span className="text-md">Ver Código</span>
                   </a>
                 )}
                 {project.figmaUrl && (
@@ -81,10 +81,10 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                     href={project.figmaUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition min-w-48"
+                    className="inline-flex items-center px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition min-w-32 md:min-w-48"
                   >
                     <FigmaIcon className="mr-2" size={24} />
-                    Protótipo Figma
+                    <span className="text-md">Protótipo Figma</span>
                   </a>
                 )}
                 {project.siteUrl && (
@@ -92,10 +92,10 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                     href={project.siteUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-500 transition min-w-48"
+                    className="inline-flex items-center  px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-500 transition min-w-32 md:min-w-48"
                   >
                     <WebIcon className="mr-2" size={24} />
-                    Sistema online
+                    <span className="pt-1 text-md">Sistema online</span>
                   </a>
                 )}
               </div>
