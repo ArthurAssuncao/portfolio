@@ -17,4 +17,5 @@ export interface Project {
   figmaUrl?: string;
   siteUrl?: string;
   year: number;
+  objectFit?: "contain" | "cover" | "fill" | "none" | "scale-down";
 }

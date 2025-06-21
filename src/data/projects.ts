@@ -217,6 +217,7 @@ export const projects: Project[] = [
     title: "Hello Sundae",
     type: "web",
     description: "Application for order sundae and to use react-testing",
+    objectFit: "cover",
     thumbnail:
       "https://github.com/ArthurAssuncao/HelloSundae/blob/main/docs/screenshots/thumbnail.png?raw=true",
     technologies: [
@@ -227,7 +228,7 @@ export const projects: Project[] = [
       "React Testing Library",
       "Jest",
     ],
-    tags: ["Frontend", "Responsivo", "Teste unitário", "Teste funcionais"],
+    tags: ["Frontend", "Teste unitário", "Teste funcionais"],
     media: [
       {
         type: "image",
@@ -282,15 +283,8 @@ export const projects: Project[] = [
     description: "Calculadora de nutrientes baseada na tabela TBCA",
     thumbnail:
       "https://github.com/ArthurAssuncao/CalculadoraNutrientes/blob/main/diet_calculated_nutrients-perc.png?raw=true",
-    technologies: [
-      "NextJS",
-      "CSS Modules",
-      "SASS",
-      "Typescript",
-      "React Testing Library",
-      "Jest",
-    ],
-    tags: ["Frontend", "Responsivo", "Teste unitário", "Teste funcionais"],
+    technologies: ["Python", "Crawler"],
+    tags: ["Crawler"],
     media: [
       {
         type: "image",
